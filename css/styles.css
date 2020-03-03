@@ -1,0 +1,341 @@
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham Pro", sans-serif;
+}
+
+a,
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.wrapper {
+  width: 780px;
+  margin: 0 auto;
+}
+
+/*ХЕДЕР*/
+
+header {
+  height: calc(70px - 46px);
+  padding: 23px;
+  background-color: #ffd241;
+}
+
+.header-btn {
+  border: none;
+  background-color: #ffd241;
+  float: right;
+}
+
+/*Страны*/
+.section-name {
+  text-align: center;
+  font-size: 36px;
+}
+
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.countries__item {
+  margin-bottom: 40px;
+}
+
+.pic-div {
+  width: 380px;
+  padding-top: 218px;
+  position: relative;
+}
+
+.pic-div--italy {
+  background: url(../img/countries/italy.png) top no-repeat;
+  margin-right: 20px;
+}
+
+.pic-div--iceland {
+  background: url(../img/countries/iceland.png) top no-repeat;
+}
+
+.pic-div--turkey {
+  background: url(../img/countries/turkey.png) top no-repeat;
+  margin-right: 20px;
+}
+
+.pic-div--norway {
+  background: url(../img/countries/norway.png) top no-repeat;
+}
+
+.price {
+  padding: 14px 26px;
+  background-color: #ffd241;
+  margin-top: -55px;
+  width: calc(160px - 48px);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-weight: bold;
+}
+
+.countries__item--country {
+  margin-top: 10px;
+  font-size: 9px;
+  color: #c5b223;
+  font-weight: bold;
+}
+
+.countries__item--link {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.countries__item--way {
+  margin-top: 20px;
+  max-width: 340px;
+  font-size: 9px;
+  color: gray;
+}
+.countries__item--conditions {
+  margin-top: 15px;
+  max-width: 150px;
+  font-size: 9px;
+  font-weight: bold;
+}
+.bonus-btn {
+  padding: 3px 18px;
+  border-radius: 25px;
+  background-color: #cb0037;
+  color: white;
+  margin-top: 15px;
+  font-size: 9px;
+  border: none;
+}
+
+/*Заявка*/
+
+.text-underline {
+  display: inline-block;
+  color: black;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  font-size: 10px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.order-text {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.red-star {
+  display: inline;
+  color: #cb0037;
+}
+
+.wrong-imput {
+  font-size: 13px;
+  margin-top: -15px;
+  color: #cb0037;
+  display: none;
+}
+
+.input-wrapp {
+  width: 350px;
+  height: 50px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.user-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: space-around;
+  width: 380px;
+  font-size: 10px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.checkboxes__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+}
+
+.checkboxes__item__title-friends {
+  text-align: center;
+  margin-top: -11px;
+}
+
+.btn-send {
+  padding: 17px 178px 17px 30px;
+  border-radius: 25px;
+  font-size: 12px;
+  border: none;
+  margin: 40px 0;
+  background: #ffd241 url(../img/btn/arrow.png) no-repeat 90% 50%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  display: block;
+  cursor: pointer;
+  content: "\2714";
+  color: transparent;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 22px;
+  margin: 5px 0 0 0;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(186, 207, 235);
+}
+
+input[type="checkbox"]:checked + label:before {
+  color: white;
+  background: url(../img/checkbox/done.png) center no-repeat;
+}
+
+input[id="marketing"] + label:before, input[id="agreement"] + label:before {
+  display: block;
+  cursor: pointer;
+  color: transparent;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 22px;
+  margin: 0;
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+  border: 1px solid rgb(186, 207, 235);
+}
+
+input[id="marketing"]:checked + label:before, input[id="agreement"]:checked + label:before {
+  color: white;
+  font-size: 1px;
+  background: url(../img/checkbox/done-small.png) center no-repeat;
+}
+
+.checkbox__description {
+  margin-left: 30px;
+  font-size: 10px;
+  font-weight: normal;
+  color: gray;
+}
+
+.last-checkbox {
+  color: black;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+
+
+
+/*меню*/ 
+.menu {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 530px;
+  top: 0;
+  right: 0;
+  background-color: #FFD241;
+}
+
+.toggle-menu{
+  display:block;
+}
+
+.header-btn--menu {
+  margin: 23px 23px 0 0;
+  color: white;
+}
+
+.wrapper-menu {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.select-country {
+  padding: 17px 20px 17px 30px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+  outline: none;
+}
+
+.select-calendar {
+  padding: 17px 22px 17px 20px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  display: inline-block;
+  float: right;
+  outline: none;
+}
+
+.select-type {
+  padding: 17px 22px 17px 30px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0%;
+  margin: 40px auto 300px auto;
+  width: 157px;
+  cursor: pointer;
+}
+
+.menu-list--item {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.phone-number {
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+.get-tour {
+  border: 1px solid black;
+  padding: 15px 60px;
+  width: 100%;
+  background-color:#FFD241;
+  border-radius: 25px;
+}
+

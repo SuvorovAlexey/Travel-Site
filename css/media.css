@@ -1,0 +1,44 @@
+/*Страны*/
+@media (max-width: 810px) {
+  .countries, .user-data {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
+
+  #country-section {
+    border-bottom: 2px solid #C4C4C4;
+  }
+
+  .pic-div--italy, .pic-div--turkey {
+    margin: 0;
+  }
+
+  .pic-div {
+    width: 340px;
+  }
+
+  .input-wrapp {
+    width: 310px;
+    border: 1px solid gray;
+  }
+
+  .text-underline--lastinput {
+    margin-left: 20px;
+  }
+
+  .checkboxes {
+    width: 375px;
+  }
+ 
+}
+
+@media (max-width: 810px) {
+  .toggle-menu {
+    width: 100%;
+}
+  }
+

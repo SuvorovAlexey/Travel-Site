@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <link href="css/font-gotham.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <script src="js/script.js" defer></script>
+
+    <title>Travel site</title>
+  </head>
+
+  <body>
+
+    <header>
+      <button class="header-btn">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <section id="country-section">
+      <div class="wrapper">
+        <h2 class="section-name">ЗИМБАБВЕ</h2>
+        <div class="countries">
+          <div class="countries__item">
+
+            <div class="pic-div pic-div--italy">
+              <div class="price">от 118 112 Р</div>
+            </div>
+            <p class="countries__item--country">ИТАЛИЯ</p>
+            <p class="countries__item--link">Под небом Тосканы</p>
+            <p class="countries__item--way">
+              Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) — Ла Верна —
+              Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)
+            </p>
+            <p class="countries__item--conditions">
+              8 дней / 7 ночей Русский язык 27.04.19 - 04.05.19 и еще 15 дат
+            </p>
+            <button class="bonus-btn">Авиаперелет включен</button>
+          </div>
+
+          <div class="countries__item">
+            <div class="pic-div pic-div--iceland">
+              <div class="price">от 140 715 Р</div>
+            </div>
+            <p class="countries__item--country">ИСЛАНДИЯ</p>
+            <p class="countries__item--link">Майские каникулы в Исландии</p>
+            <p class="countries__item--way">
+              Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль — Сельяландсфосс
+              — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль
+              — Arnarstapi — Рейкьявик
+            </p>
+            <p class="countries__item--conditions">
+              8 дней / 7 ночей Русский язык 27.04.19 - 04.05.19
+            </p>
+          </div>
+
+          <div class="countries__item">
+            <div class="pic-div pic-div--turkey">
+              <div class="price">от 37 302 Р</div>
+            </div>
+            <p class="countries__item--country">ТУРЦИЯ</p>
+            <p class="countries__item--link">Открытие Турции</p>
+            <p class="countries__item--way">
+              Стамбул — Анкара — Каппадокия — Конья — Памуккале — Эфес —
+              Кушадасы — Пергам — Ассос — Троя — Стамбул
+            </p>
+            <p class="countries__item--conditions">
+              8 дней / 7 ночей Русский язык 28.04.19 - 05.05.19 и еще 3 даты
+            </p>
+          </div>
+
+          <div class="countries__item">
+            <div class="pic-div pic-div--norway">
+              <div class="price">от 145 000 Р</div>
+            </div>
+            <p class="countries__item--country">НОРВЕГИЯ, ШПИЦБЕРГЕН</p>
+            <p class="countries__item--link">От Свальбарда до Груманта</p>
+            <p class="countries__item--conditions">
+              8 дней / 7 ночей Русский язык 27.04.19 - 04.05.19 и еще 15 дат
+            </p>
+            <button class="bonus-btn">Гарантированный тур</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <h2 class="section-name">Заявка на подбор путешествия</h2>
+        <form enctype="multipart/form-data" method="post" action="#">
+          <p class="text-underline">НЕМНОГО О ВАС</p>
+          <div class="user-data">
+            <label class="label-name">
+              <p class="order-text">ИМЯ <span class="red-star">*</span> </p>
+              <input class="input-wrapp input-name" type="text" name="name" id="name" />
+              <p class="wrong-imput wrong-imput--name">Укажите имя</p>
+            </label>
+            <label>
+              <p class="order-text">ТЕЛЕФОН</p>
+              <input
+                class="input-wrapp"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="+7 ___ ___ __ __"
+              />
+            </label>
+          </div>
+
+          <p class="text-underline">О ПУТЕШЕСТВИИ</p>
+          <div class="user-data">
+            <label>
+              <p class="order-text">КУДА И КОГДА ХОТИТЕ ПОЕХАТЬ?  <span class="red-star">*</span> </p>
+              <input
+                class="input-wrapp input-country" type="text" name="destination" id="destination" placeholder="Континент, страна или город"/>
+                <p class="wrong-imput wrong-imput--country">Укажите континент, страну или город</p>
+            </label>
+            <label>
+              <p class="order-text">КОГДА?</p>
+              <input
+                class="input-wrapp"
+                type="text"
+                name="time"
+                id="time"
+                placeholder="Даты или временной  интервал"
+              />
+            </label>
+          </div>
+
+          <div class="user-data">
+            <div>
+              <p class="text-underline text-underline--lastinput">СПОСОБ СВЯЗИ</p>
+
+              <div class="checkboxes">
+                
+                <div class="checkboxes__item">
+                  <p>VIBER</p>
+                  <input type="checkbox" id="Viber" name="Viber" />
+                  <label for="Viber"></label>
+                </div>
+                  
+                <div class="checkboxes__item">
+                  <p>WHATSAPP</p>
+                  <input type="checkbox" id="WHATSAPP" name="WHATSAPP" />
+                  <label for="WHATSAPP"></label>
+                </div> 
+
+                <div class="checkboxes__item">
+                  <p>EMAIL</p>
+                  <input type="checkbox" id="EMAIL" name="EMAIL" />
+                  <label for="EMAIL"></label>
+                </div> 
+
+                
+                <div class="checkboxes__item">
+                  <p>ТЕЛЕФОН</p>
+                  <input type="checkbox" id="PHONE" name="PHONE" />
+                  <label for="PHONE"></label>
+                </div>
+
+               
+              </div>
+            </div>
+
+            <div>
+              <p class="text-underline text-underline--lastinput">ОТКУДА УЗНАЛИ О НАС</p>
+
+              <div class="checkboxes">
+
+                <div class="checkboxes__item">
+                  <p>ИНТЕРНЕТ</p>
+                  <input type="checkbox" id="ИНТЕРНЕТ" name="ИНТЕРНЕТ" />
+                  <label for="ИНТЕРНЕТ"></label>
+                </div>
+
+                <div class="checkboxes__item">
+                  <p class="checkboxes__item__title-friends">РЕКОМЕНДОВАЛИ <br />
+                    ДРУЗЬЯ</p>
+                  <input type="checkbox" id="friends" name="friends" />
+                  <label for="friends"></label>
+                </div>
+
+                <div class="checkboxes__item">
+                  <p>СОЦ. СЕТИ</p>
+                  <input type="checkbox" id="social" name="social" />
+                  <label for="social"></label>
+                </div>
+
+                <div class="checkboxes__item">
+                  <p>УЖЕ ЕЗДИЛ</p>
+                  <input type="checkbox" id="went" name="went" />
+                  <label for="went"></label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="last-checkbox">
+            <input type="checkbox" id="marketing" name="marketing" />
+            <label for="marketing"
+              >&nbsp; Получать свежие предложения по электронной почте
+              <p class="checkbox__description">
+                Каждую неделю мы делаем для вас обзор лучших экспедиций, статей
+                и лайфхаков для путешественников. Если вдруг вам не понравится,
+                вы сможете отписаться в любой момент.
+              </p>
+            </label>
+            <br />
+
+            <input type="checkbox" class="ch-agree" id="agreement" name="agreement" />
+            <label class="ch-agree--wrong" for="agreement"
+              >&nbsp; С обработкой своих персональных данных согласен.  <span class="red-star">*</span>
+              <p class="checkbox__description">
+                Отправляя заявку я подтверждаю согласие с условиями
+                Пользовательского соглашения
+              <p class="checkbox__description"><span class="red-star">*</span> Поля, которые надо обязательно заполнить</p>
+              </p>
+            </label>
+            
+          </div>
+          <button class="btn-send">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="menu">
+      <button class="header-btn header-btn--menu">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </button>
+      <div class="wrapper-menu">
+         
+          <select class="select-country" name="country" id="country">
+            <option value="">Страны</option>
+            <option value="">Южная Америка</option>
+            <option value="">Аргентина</option>
+            <option value="">Бразилия</option>
+            <option value="">Перу</option>
+            <option value="">Уругвай</option>
+          </select>
+
+          <select class="select-calendar" name="calendar" id="calendar">
+            <option value="">Даты</option>
+          </select>
+
+        
+          <select class="select-type" name="calendar" id="calendar">
+            <option value="">Тип путешествия</option>
+            <option value="">Активный</option>
+            <option value="">Майские</option>
+            <option value="">На авто</option>
+            <option value="">На корабле</option>
+            <option value="">Сёрфинг</option>
+            <option value="">Экспедиция</option>
+          </select>
+
+          <ul class="menu-list">
+            <li class="menu-list--item">ПУТЕШЕСТВИЯ</li>
+            <li class="menu-list--item">О НАС</li>
+            <li class="menu-list--item">ОТЗЫВЫ</li>
+            <li class="menu-list--item">БЛОГ</li>
+          </ul>
+
+          <p class="phone-number">+7 (495) 123-45-67</p>
+          <button class="get-tour">ПОДБЕРИТЕ МНЕ ТУР</button>
+          
+        
+      
+
+    </section>
+
+  </body>
+</html>
