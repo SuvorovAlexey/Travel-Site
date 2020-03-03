@@ -21,11 +21,20 @@ close.addEventListener('click', ()=>{
 //кнопка отправки формы
 let btnSend = document.querySelector('.btn-send')
 
+let nameInput = document.querySelector('.input-name')
+let countryInput = document.querySelector('.input-country')
+let chAgree = document.querySelector('.ch-agree')
+
+
+
   //проверка имени
   btnSend.addEventListener('click', (ev)=> {
     ev.preventDefault()
+
+    if (countryInput.value && nameInput.value && chAgree.checked) {
+      alert('Благодарим за заявку! Скоро мы с Вами свяжемся!')
+    }
     
-    let nameInput = document.querySelector('.input-name')
     if (!nameInput.value) {
       nameInput.style.border = '2px solid #cb0037'
       let wrongTextName = document.querySelector('.wrong-imput--name')
@@ -40,7 +49,6 @@ let btnSend = document.querySelector('.btn-send')
 
   //проверка континента/страны
 
-    let countryInput = document.querySelector('.input-country')
     if (!countryInput.value) {
       countryInput.style.border = '2px solid #cb0037'
       let wrongTextCountry = document.querySelector('.wrong-imput--country')
@@ -54,7 +62,6 @@ let btnSend = document.querySelector('.btn-send')
     }
 
    //проверка чекбокса
-    let chAgree = document.querySelector('.ch-agree')
     if (!chAgree.checked) {
       let chAgreeWrong = document.querySelector('.ch-agree--wrong')
       chAgreeWrong.style.color = '#cb0037'
@@ -62,12 +69,10 @@ let btnSend = document.querySelector('.btn-send')
     else {
       let chAgreeWrong = document.querySelector('.ch-agree--wrong')
       chAgreeWrong.style.color = 'black'
-      chAgree.checked = false
     }
 
-    if (chAgree.checked || countryInput.value || nameInput.value) {
-      alert('Спасибо за обращение! Скоро мы свяжемся с Вами!')
-    }
+
+    chAgree.checked = false
 
   })
 
